@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plant Pack Global</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1587202372775-dcaa9cf748c7?fit=crop&w=1920&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.5);
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+    nav {
+      background-color: #14532d;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      gap: 30px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 80px;
+    }
+    .product {
+      display: flex;
+      flex-direction: column;
+      background: #f8f9fa;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+    .product h2 {
+      background-color: #e2e8f0;
+      margin: 0;
+      padding: 20px;
+      font-size: 1.5rem;
+      color: #14532d;
+    }
+    .product-details {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+    .detail {
+      background: #ffffff;
+      border-left: 4px solid #16a34a;
+      padding: 15px;
+      border-radius: 6px;
+    }
+    .detail strong {
+      display: block;
+      color: #14532d;
+      margin-bottom: 5px;
+    }
+    .section-heading {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #14532d;
+    }
+    .about, .contact {
+      background: #f8f8f8;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    }
+    .contact .contact-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .contact-box {
+      background: #ffffff;
+      flex: 1 1 250px;
+      padding: 20px;
+      border-left: 4px solid #22c55e;
+      border-radius: 8px;
+    }
+    form {
+      display: grid;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 14px;
+      background-color: #14532d;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0f3f24;
+    }
+    footer {
+      background-color: #14532d;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Plant Pack Global</h1>
+    <p>Premium Eco-Friendly Tableware Manufacturer</p>
+  </header>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <section id="products">
+      <div class="section-heading">Our Products</div>
+      <div class="product">
+        <h2>6 Inch Round Plate</h2>
+        <div class="product-details">
+          <div class="detail"><strong>Weight</strong>7 GMS</div>
+          <div class="detail"><strong>Size</strong>6 inch</div>
+          <div class="detail"><strong>Packs per Carton</strong>30 x 50</div>
+          <div class="detail"><strong>Total PCS</strong>1500</div>
+        </div>
+      </div>
+      <div class="product">
+        <h2>3 CP Compartment Plate</h2>
+        <div class="product-details">
+          <div class="detail"><strong>Weight</strong>20 GMS</div>
+          <div class="detail"><strong>Compartments</strong>3</div>
+          <div class="detail"><strong>Packs per Carton</strong>10 x 50</div>
+          <div class="detail"><strong>Total PCS</strong>500</div>
+        </div>
+      </div>
+      <div class="product">
+        <h2>9x6 Clamshell</h2>
+        <div class="product-details">
+          <div class="detail"><strong>Weight</strong>30 GMS</div>
+          <div class="detail"><strong>Size</strong>9" x 6"</div>
+          <div class="detail"><strong>Packs per Carton</strong>5 x 50</div>
+          <div class="detail"><strong>Total PCS</strong>250</div>
+        </div>
+      </div>
+      <div class="product">
+        <h2>240 ML Round Bowl</h2>
+        <div class="product-details">
+          <div class="detail"><strong>Weight</strong>6 GMS</div>
+          <div class="detail"><strong>Size</strong>240 ML / 8 oz</div>
+          <div class="detail"><strong>Packs per Carton</strong>20 x 50</div>
+          <div class="detail"><strong>Total PCS</strong>1000</div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="section-heading">About Us</div>
+      <div class="about">
+        <p>
+          Plant Pack Global is a leading manufacturer of biodegradable, compostable bagasse-based tableware based in Morbi, Gujarat. We deliver sustainable alternatives to plastic disposables for businesses across India and overseas. Our commitment to quality and the environment drives everything we do.
+        </p>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="section-heading">Contact Us</div>
+      <div class="contact">
+        <div class="contact-boxes">
+          <div class="contact-box">
+            <strong>Brijesh Patel</strong>
+            <p>Founder & Sales Director</p>
+            <p>📞 +91 95375 77165</p>
+          </div>
+          <div class="contact-box">
+            <strong>Prince Patel</strong>
+            <p>Co-Founder & Production Head</p>
+            <p>📞 +91 89808 49113</p>
+          </div>
+        </div>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Plant Pack Global. Crafted for a Greener Future.
+  </footer>
+</body>
+</html>
